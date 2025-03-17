@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="325.62082mm"
+   height="92.324997mm"
+   viewBox="0 0 325.62083 92.324996"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="new-purpose-thinking.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="744.58344"
+     inkscape:cy="144.95689"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(16.463803,-72.964581)">
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="61.749195"
+       height="12.078811"
+       x="72.379555"
+       y="109.73714"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.50244px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:1.11925px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.649805;stroke-dasharray:none;stroke-opacity:1"
+       x="102.74591"
+       y="118.68036"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.649805"
+         x="103.30553"
+         y="118.68036">CloudInvVis</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="42.845638"
+       height="12.078812"
+       x="10.912816"
+       y="93.277725"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.50244px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:1.11925px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.649805;stroke-dasharray:none;stroke-opacity:1"
+       x="32.492928"
+       y="102.41627"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.649805"
+         x="33.052551"
+         y="102.41627">AWS</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="42.845638"
+       height="12.078812"
+       x="10.912816"
+       y="109.68189"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.50244px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:1.11925px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.649805;stroke-dasharray:none;stroke-opacity:1"
+       x="33.022095"
+       y="118.82043"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.649805"
+         x="33.581718"
+         y="118.82043">Azure</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4"
+       width="42.845638"
+       height="12.078812"
+       x="10.912816"
+       y="126.08604"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.50244px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:1.11925px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.649805;stroke-dasharray:none;stroke-opacity:1"
+       x="33.022095"
+       y="135.22459"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0.649805"
+         x="33.581718"
+         y="135.22459">GCS</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 47.028831,105.35654 25.350722,10.42001"
+       id="path4"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 53.758454,115.7213 18.621099,0.0553"
+       id="path5"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 53.758454,132.12545 72.379945,115.90889"
+       id="path6"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect10"
+       width="61.749195"
+       height="12.078811"
+       x="152.22069"
+       y="109.73714"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.48923px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:0.459318px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.266667;stroke-dasharray:none;stroke-opacity:1"
+       x="182.24826"
+       y="114.56229"
+       id="text10"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.266667"
+         x="182.24826"
+         y="114.56229"
+         id="tspan16">Cloud Infrastructure </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.266667"
+         x="182.47792"
+         y="118.92382"
+         id="tspan17">Diagram Abstract Tree</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect11"
+       width="42.845638"
+       height="12.078812"
+       x="233.8934"
+       y="93.277733"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.51353px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:0.989074px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.57423;stroke-dasharray:none;stroke-opacity:1"
+       x="255.29044"
+       y="101.82609"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="stroke-width:0.57423"
+         x="255.78497"
+         y="101.82609">Mermaid</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect12"
+       width="42.845638"
+       height="12.078812"
+       x="233.8934"
+       y="109.6819"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.27037px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:0.957062px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.555643;stroke-dasharray:none;stroke-opacity:1"
+       x="255.08359"
+       y="118.47668"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="stroke-width:0.555643"
+         x="255.56212"
+         y="118.47668">InkScape</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#343928;stroke-width:0.715812;stroke-dasharray:none;stroke-opacity:1"
+       id="rect13"
+       width="42.845638"
+       height="12.078812"
+       x="233.8934"
+       y="126.08604"
+       rx="0.53947753"
+       ry="0.34781975" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.50244px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:1.11925px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#343928;stroke-width:0.649805;stroke-dasharray:none;stroke-opacity:1"
+       x="256.00269"
+       y="135.22461"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="stroke-width:0.649805"
+         x="256.56232"
+         y="135.22461">...?</tspan></text>
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 213.96988,115.77656 233.8934,99.317139"
+       id="path13"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 233.8934,132.12546 213.88563,115.87855"
+       id="path14"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 233.8934,115.72131 -19.92352,0.0553"
+       id="path15"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.0846px;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP, Normal';text-align:center;letter-spacing:1.72244px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:none;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       x="180.72969"
+       y="182.29051"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="stroke-width:1"
+         x="181.59091"
+         y="182.29051">s</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.12875,115.77655 18.09194,-1e-5"
+       id="path17"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
