@@ -1,0 +1,7 @@
+{  "accounts":
+    [
+        {"id": "975050051976", "name": "technative-nonproduction", "default": true}
+    ],
+    "cidrs": {}
+}
+
