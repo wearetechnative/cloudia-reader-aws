@@ -662,10 +662,9 @@ def build_data_structure(account_data, config, outputfilter):
 
 
 def prepare(account, config, outputfilter):
-    """NO LONGER MAINTAINED
+    """
     Collect the data and write it to a file
     """
-    log("WARNING: This functionality is no longer maintained")
     cytoscape_json = build_data_structure(account, config, outputfilter)
     if not outputfilter["node_data"]:
         filtered_cytoscape_json = []
@@ -679,8 +678,6 @@ def prepare(account, config, outputfilter):
 
 
 def run(arguments):
-    """NO LONGER MAINTAINED"""
-    log("WARNING: This functionality is no longer maintained")
     # Parse arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
