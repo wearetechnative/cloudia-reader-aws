@@ -1,19 +1,20 @@
-CloudMapper Flake Fork
-======================
+# Cloudia
 
-## About this flake fork
+Cloud Infrastructure Abstraction. Cloudia reads clouds and will write diagrams.
 
-The upstream Cloudmapper project has been abandoned. The used python libraries
-are obsolete and therefor it's difficult, even using docker, to get cloudmapper
-working. This is sad, because cloudmapper still is very useful.
+Currently Cloudia is just a fork of CloudMapper. The ambition of the Cloudia
+project is to serve as man in the middle between Cloud Platforms and Diagram
+authoring applications.
 
-This fork adds a flake.nix file to preserve a working cloudmapper for
-the future. If you wanna try it make sure you have [nix](https://nixos.org)
-installed with flakes enabled.
+![](concept-intro.png)
+
+Star us and keep following the project. If you just want a working version of
+CloudMapper, have a look at our
+[cloudmapper-flake-fork](https://github.com/wearetechnative/cloudmapper-flake).
 
 ## Usage
 
-First read upstream [Setup](#setup) documentation.
+First read general [Setup](#setup) documentation.
 
 ### nix develop
 
@@ -24,10 +25,6 @@ nix development github:wearetechnative/cloudmapper-flake
 ```
 
 You can now run `python cloudmapper [command]` e.g. `python cloudmapper collect`
-
-### ~~nix run~~
-
-~~Alternatively you can run cloudmapper instantly using the `nix run` method.~~
 
 ## Supported commands
 
