@@ -26,14 +26,27 @@
                 ];
               };
 
+              "nose" = super.buildPythonPackage rec {
+                pname = "nose";
+                version = "1.3.7";
+                src = super0.fetchurl {
+                  url = "https://files.pythonhosted.org/packages/15/d8/dd071918c040f50fa1cf80da16423af51ff8ce4a0f2399b7bf8de45ac3d9/nose-1.3.7-py3-none-any.whl";
+                  sha256 = "1b2kgk8nylcp5sspfx5y8pcxdbs5ryxng9il9fcm331z8k6cdxwz";
+                };
+                format = "wheel";
+                doCheck = false;
+                buildInputs = [];
+                checkInputs = [];
+                nativeBuildInputs = [];
+                propagatedBuildInputs = [];
+              };
+
               "json-cfg" = super.buildPythonPackage rec {
                 pname = "json-cfg";
                 version = "0.4.2";
                 src = super0.fetchurl {
-                  url =
-                    "https://files.pythonhosted.org/packages/b7/f5/ecdfc00830bcbaf7743f0237cf4f3ced5511d57257408db01aa320e09458/json_cfg-0.4.2-py2.py3-none-any.whl";
-                  sha256 =
-                    "1j0nnx48srkhvs7ibb6r1jwzvgvj268cqq07cpxbscvigaix1j3h";
+                  url = "https://files.pythonhosted.org/packages/b7/f5/ecdfc00830bcbaf7743f0237cf4f3ced5511d57257408db01aa320e09458/json_cfg-0.4.2-py2.py3-none-any.whl";
+                  sha256 = "1j0nnx48srkhvs7ibb6r1jwzvgvj268cqq07cpxbscvigaix1j3h";
                 };
                 format = "wheel";
                 doCheck = false;

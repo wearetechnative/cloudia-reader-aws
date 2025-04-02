@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Try to avoid this showing up in search results if accidentally made public -->
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
-    
+
     <title>CloudMapper IAM Report</title>
-    
+
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/lato.css" rel="stylesheet">
 
@@ -39,16 +39,16 @@
                     </div>
                 </nav>
             </div>
-    
+
             <hr class="gradient">
-    
+
               <div class="container">
             <div class="row">
-    
+
     <div class="content, report">
         <div class="row">
             <div class="col-sm-12">
-            
+
 Account: {{t.account_name}} ({{t.account_id}})<br>
 Report generated: {{t.report_generated_time}}
 {{t.graph}}
@@ -59,7 +59,7 @@ Report generated: {{t.report_generated_time}}
     {% for user in t.users %}
         <li><a href="#{{user.arn}}">{{user.name}}</a>: {{user.services_used}}/{{user.services_granted}}
         <div style="width:50%"><canvas id="serviceChart{{user.arn}}" width="200" height="15"></canvas></div>
-        <script>makeServiceUnusedChart("serviceChart{{user.arn}}", {{user.services_used}}, {{user.services_granted}} - {{user.services_used}});</script> 
+        <script>makeServiceUnusedChart("serviceChart{{user.arn}}", {{user.services_used}}, {{user.services_granted}} - {{user.services_used}});</script>
     {% endfor %}
     </ul>
 {% endif %}
@@ -71,7 +71,7 @@ Report generated: {{t.report_generated_time}}
     {% for role in t.roles %}
         <li><a href="#{{role.arn}}">{{role.name}}</a>: {{role.services_used}}/{{role.services_granted}}
         <div style="width:50%"><canvas id="serviceChart{{role.arn}}" width="200" height="15"></canvas></div>
-        <script>makeServiceUnusedChart("serviceChart{{role.arn}}", {{role.services_used}}, {{role.services_granted}} - {{role.services_used}});</script> 
+        <script>makeServiceUnusedChart("serviceChart{{role.arn}}", {{role.services_used}}, {{role.services_granted}} - {{role.services_used}});</script>
     {% endfor %}
     </ul>
 {% endif %}

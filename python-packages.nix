@@ -18,5 +18,7 @@
       s3transfer
       toml
       urllib3
+      pylint
+      nose
     ]))
 ]

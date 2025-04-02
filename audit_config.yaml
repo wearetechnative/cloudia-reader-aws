@@ -5,7 +5,7 @@
 # group: Used to group these finding types in the report
 
 EXCEPTION:
-  title: An exception occurred during the audit. 
+  title: An exception occurred during the audit.
   description: Other issues cannot be checked for until this is fixed.
   severity: Critical
   group: ERROR
@@ -70,14 +70,14 @@ PASSWORD_POLICY_NOT_SET:
   severity: Low
   is_global: True
   group: IAM
-  
+
 PASSWORD_POLICY_CHARACTER_MINIMUM:
   title: Password policy does not meet minimum character requirement
   description: A password length requirement helps ensure strong passwords are used by IAM Users. Setting a password policy does not impact existing users, so after setting this, you should ensure users reset their passwords so that they are in compliance.
   severity: Low
   is_global: True
   group: IAM
-  
+
 PASSWORD_POLICY_CHARACTER_SET_REQUIREMENTS:
   title: Password policy does not require all character sets
   description: A password character set requirement help ensure strong passwords are used by IAM Users. Setting a password policy does not impact existing users, so after setting this, you should ensure users reset their passwords so that they are in compliance.

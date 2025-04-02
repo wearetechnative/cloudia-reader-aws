@@ -9,9 +9,9 @@
     <!-- Try to avoid this showing up in search results if accidentally made public -->
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
-    
+
     <title>CloudMapper AWS Security Report</title>
-    
+
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/lato.css" rel="stylesheet">
 
@@ -107,12 +107,12 @@
             {% else %}
             <td>
             {% endif %}
-            
+
             {{ k }}</td>
         {% endfor %}
     </tr>
     {% endfor %}
-    
+
 </table>
 
 
@@ -126,7 +126,7 @@
             <th class="rotate"><div><span>{{ key }}</span></div></th>
         {% endfor %}
         </tr>
-    
+
         {% for account in t.accounts %}
         <tr>
             <td>{{ account.name }}</td>
@@ -139,7 +139,7 @@
             {% endfor %}
         </tr>
         {% endfor %}
-        
+
     </table>
 
 <h2><a href="#iam" id="iam">IAM</a></h2>
@@ -157,7 +157,7 @@
             <th class="rotate"><div><span>{{ key }}</span></div></th>
         {% endfor %}
         </tr>
-    
+
         {% for account in t.accounts %}
         <tr>
             <td>{{ account.name }}</td>
@@ -209,7 +209,7 @@
 
 {% for issue_id in t.findings[finding_group] %}
     <div class="section"><a name="{{issue_id}}"></a>
-    {% set finding = t.findings[finding_group][issue_id] %} 
+    {% set finding = t.findings[finding_group][issue_id] %}
     <h3>{{ finding['title'] }}</h3>
     <p><b style="background-color: {{finding['severity_color']}}">Severity: {{finding['severity']}}</b><br>
     <b>Issue ID:</b> {{issue_id}}</p>
@@ -224,7 +224,7 @@
         <ul>
         {% for region in account_hits[account]['regions'] %}
 
-        
+
             {% if not t.findings[finding_group][issue_id]['is_global'] %}<li>{{region}} {% endif %}
             <ol>
                 {% set hits = account_hits[account]['regions'][region]['hits'] %}
