@@ -20,5 +20,6 @@
       urllib3
       pylint
       nose
+      coverage
     ]))
 ]

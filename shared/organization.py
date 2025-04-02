@@ -1,6 +1,6 @@
 import boto3
 
-from utils.strings import slugify
+from shared.strings import slugify
 
 # maximum allowed value, c.f. https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html#API_ListAccounts_RequestSyntax
 MAX_NUM_RESULTS = 20
