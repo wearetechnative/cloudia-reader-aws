@@ -1,5 +1,5 @@
 {
-  description = "Cloudmapper";
+  description = "Cloudia";
 
   inputs = { nixpkgs.url = "github:NixOS/nixpkgs"; };
 
@@ -26,7 +26,7 @@
       in
       {
         default = pkgs.callPackage ./package.nix { inherit python; inherit packages; };
-        cloudmapper = pkgs.callPackage ./package.nix { inherit python; inherit packages; };
+        cloudia = pkgs.callPackage ./package.nix { inherit python; inherit packages; };
       });
 
       devShells = forAllSystems ({ pkgs }:

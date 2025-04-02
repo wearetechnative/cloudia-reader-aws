@@ -1,9 +1,8 @@
-#from setuptools import setup, find_packages
 from setuptools import setup, find_packages
 
 setup(
-    name="cloudmapper",
-    version="2.10.0",
+    name="cloudia",
+    version="0.1.0",
     packages=find_packages(),
     install_requires=[
         'boto3',
@@ -23,10 +22,10 @@ setup(
         'toml',
         'urllib3',
     ],
-    scripts=['cloudmapper.py'],
+    scripts=['cloudia.py'],
 #    entry_points={
 #        'console_scripts': [
-#            'cloudmapper = cloudmapper:main',
+#            'cloudia = cloudia:main',
 #        ],
 #    },
 )

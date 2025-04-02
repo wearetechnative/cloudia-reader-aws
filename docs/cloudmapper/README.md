@@ -23,7 +23,7 @@ This step converts the collected AWS data into a format that can be displayed
 in the browser by generating a `web/data.json` file.
 
 ```
-python cloudmapper.py prepare --account my_account
+python cloudia.py prepare --account my_account
 ```
 
 There are a number of filtering options that can be applied here to reduce the
@@ -60,7 +60,7 @@ The other filtering options are:
 You can host the `web` directory with your webserver of choice, or just run:
 
 ```
-python cloudmapper.py webserver
+python cloudia.py webserver
 ```
 
 Using the UI

@@ -23,7 +23,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ---------------------------------------------------------------------------
 
-This script manages CloudMapper, a tool for analyzing AWS environments.
+This script manages Cloudia, a tool for analyzing AWS environments.
 """
 from __future__ import absolute_import, division, print_function
 import sys
@@ -34,7 +34,7 @@ __version__ = "2.10.1"
 
 
 def show_help(commands):
-    print("CloudMapper {}".format(__version__))
+    print("Cloudia {}".format(__version__))
     print("usage: {} [{}] [...]".format(sys.argv[0], "|".join(sorted(commands.keys()))))
     for command, module in sorted(commands.items()):
         print("  {}: {}".format(command, module.__description__))
