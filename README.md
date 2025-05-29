@@ -22,7 +22,7 @@ First read general [Setup](#setup) documentation.
 Open the development shell.
 
 ```bash
-nix development github:wearetechnative/cloudia
+nix develop github:wearetechnative/cloudia
 ```
 
 You can now run `python Cloudia [command]` e.g. `python Cloudia collect`
