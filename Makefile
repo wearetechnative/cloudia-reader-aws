@@ -7,5 +7,5 @@ test:
 lint:
 	bash tests/scripts/pylint.sh
 
-test_e2e_prepare:
-	bash tests/scripts/prepare_e2e.sh
+test_e2e_cytoscape_generate:
+	bash tests/scripts/cytoscape_generate_e2e.sh

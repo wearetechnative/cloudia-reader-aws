@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.1.1
+
+- re-rebrand to cloudia-aws-reader
+- rename cytoscape commands (out of current scode)
+
 ## 0.1.0
 
 - initial fork and rebranding from CloudMapper to Cloudia

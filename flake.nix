@@ -1,5 +1,5 @@
 {
-  description = "Cloudia";
+  description = "Cloudia AWS Reader";
 
   inputs = { nixpkgs.url = "github:NixOS/nixpkgs"; };
 
@@ -26,7 +26,7 @@
       in
       {
         default = pkgs.callPackage ./package.nix { inherit python; inherit packages; };
-        cloudia = pkgs.callPackage ./package.nix { inherit python; inherit packages; };
+        cloudia-aws-reader = pkgs.callPackage ./package.nix { inherit python; inherit packages; };
       });
 
       devShells = forAllSystems ({ pkgs }:

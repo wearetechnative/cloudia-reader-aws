@@ -4,7 +4,7 @@ import os
 import pyjq
 
 from shared.nodes import Account, Region, is_public_ip
-from commands.prepare import build_data_structure
+from commands.cytoscape_generate import build_data_structure
 from shared.common import get_regions, query_aws
 
 
@@ -75,7 +75,7 @@ def get_public_nodes(account, config, use_cache=False):
         with open(cache_file_path) as f:
             return json.load(f), []
 
-    # Get the data from the `prepare` command
+    # Get the data from the `cytoscape_generate` command
     outputfilter = {
         "internal_edges": False,
         "read_replicas": False,

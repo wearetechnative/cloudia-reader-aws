@@ -2,7 +2,7 @@ import pyjq
 
 from shared.common import query_aws, get_regions, get_parameter_file
 from shared.nodes import Account, Region
-from commands.prepare import get_resource_nodes
+from commands.cytoscape_generate import get_resource_nodes
 
 
 def find_unused_security_groups(region):
@@ -26,7 +26,7 @@ def find_unused_security_groups(region):
     ):
         used_sgs.add(used_sg)
 
-    # Get the data from the `prepare` command
+    # Get the data from the `cytoscape_generate` command
     outputfilter = {
         "internal_edges": True,
         "read_replicas": True,

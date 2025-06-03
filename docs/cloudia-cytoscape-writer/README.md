@@ -1,9 +1,9 @@
-# Cloudia CloudMapper Writer Plugin
+# Cloudia CytoScape Writer Plugin
 
-The CloudMapper Writer Plugin converts collected cloud information to a network
+The Cloudia CytoScape Writer Plugin converts collected cloud information to a network
 diagrams created by [Cytoscape.js](https://github.com/cytoscape/cytoscape.js)
 
-This page describes how to visualize network environments using the `prepare`
+This page describes how to visualize network environments using the `cytoscape_generate`
 and `webserver` commands, and assumes you have already configured your account
 and collected the metadata about it.
 
@@ -17,13 +17,13 @@ Lambdas and others resources that are inside a VPC will be shown.  The edges
 shown are only based on the ingress rules of the Security Groups, and not the
 resource policy, or Network ACLs, or Route Tables.
 
-## Prepare the data
+## cytoscape_generate the data
 
 This step converts the collected AWS data into a format that can be displayed
 in the browser by generating a `web/data.json` file.
 
 ```
-python cloudia.py prepare --account my_account
+python cloudia-aws-reader.py cytoscape_generate --account my_account
 ```
 
 There are a number of filtering options that can be applied here to reduce the

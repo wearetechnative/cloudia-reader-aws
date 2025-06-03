@@ -22,7 +22,7 @@ setup(
         'toml',
         'urllib3',
     ],
-    scripts=['cloudia.py'],
+    scripts=['cloudia-aws-reader.py'],
 #    entry_points={
 #        'console_scripts': [
 #            'cloudia = cloudia:main',

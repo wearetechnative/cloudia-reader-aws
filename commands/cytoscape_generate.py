@@ -661,7 +661,7 @@ def build_data_structure(account_data, config, outputfilter):
     return cytoscape_json
 
 
-def prepare(account, config, outputfilter):
+def cytoscape_generate(account, config, outputfilter):
     """
     Collect the data and write it to a file
     """
@@ -836,4 +836,4 @@ def run(arguments):
         )
     account = get_account(args.account_name, config, args.config)
 
-    prepare(account, config, outputfilter)
+    cytoscape_generate(account, config, outputfilter)

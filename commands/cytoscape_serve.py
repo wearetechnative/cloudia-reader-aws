@@ -101,6 +101,6 @@ def run(arguments):
     else:
         httpd = RootedHTTPServer("web", (listening_host, args.port), Handler)
     print(
-        "Cloudia serving web directory on http://{}:{}".format(listening_host, args.port)
+        "Cloudia CytoScape serving web directory on http://{}:{}".format(listening_host, args.port)
     )
     httpd.serve_forever()

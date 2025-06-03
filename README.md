@@ -1,17 +1,8 @@
-# Cloudia
+# Cloudia AWS Reader
 
-Cloud Infrastructure Abstraction. Cloudia reads clouds and will write diagrams.
+Cloudia-aws-reader is part of the cloudia project.
 
 **WARNING WIP** application and documentation will change.
-
-Currently Cloudia is just a fork of CloudMapper. The ambition of the Cloudia
-project is to serve as man in the middle between Cloud Platforms and Diagram
-authoring applications.
-
-![](docs/images/concept-intro.png)
-
-Star us and keep following the project. If you just want a working version of
-CloudMapper, have a look at our [cloudmapper-flake-fork](https://github.com/wearetechnative/cloudmapper-flake).
 
 ## Usage
 
@@ -25,7 +16,7 @@ Open the development shell.
 nix develop github:wearetechnative/cloudia
 ```
 
-You can now run `python Cloudia [command]` e.g. `python Cloudia collect`
+You can now run `./cloudia-aws-reader [command]` e.g. `./cloudia-aws-reader collect`
 
 ## Supported commands
 
@@ -34,14 +25,14 @@ These commands has been tested to function correctly.
 
 - collect
 - configure
-- prepare
-- webserver
+- cytoscape_generate
+- cytoscape_serve
 
 # Commands
 
 - `collect`: Collect metadata about an account. More details
   [here](https://summitroute.com/blog/2018/06/05/cloudmapper_collect/).
-- `prepare`/`webserver`: See [CloudMapper Writer](docs/cloudmapper/README.md)
+- `cytoscape_generate`/`webserver`: See [CloudMapper Writer](docs/cloudmapper/README.md)
 
 If you want to add your own private commands, you can create a
 `private_commands` directory and add them there.
@@ -61,7 +52,7 @@ as the demo site https://duo-labs.github.io/cloudmapper/
 
 ```
 # Generate the data for the network map
-python cloudia.py prepare --config config.json.demo --account demo
+python cloudia.py cytoscape_generate --config config.json.demo --account demo
 python cloudia.py webserver
 ```
 
@@ -111,7 +102,7 @@ python cloudia.py collect --account my_account
 From here, try running the different commands, such as:
 
 ```
-python cloudia.py prepare --account my_account
+python cloudia.py cytoscape_generate --account my_account
 python cloudia.py webserver
 ```
 
@@ -141,3 +132,13 @@ python cloudia.py configure discover-organization-accounts
 
 You need to be authenticated to the AWS CLI and have the permission
 `organization:ListAccounts` prior to running this command.
+
+## Credits
+
+Currently Cloudia AWS Reader is just a fork of CloudMapper. The ambition of the
+Cloudia project is to serve as man in the middle between Cloud Platforms and
+Diagram authoring applications.
+
+Star us and keep following the project. If you just want a working version of
+CloudMapper, have a look at our [cloudmapper-flake-fork](https://github.com/wearetechnative/cloudmapper-flake).
+

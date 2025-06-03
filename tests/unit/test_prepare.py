@@ -28,12 +28,12 @@ from mock import patch
 from nose.tools import assert_equal, assert_true, assert_false
 import pyjq
 
-from commands.prepare import is_external_cidr, get_ec2s, get_vpcs, build_data_structure
+from commands.cytoscape_generate import is_external_cidr, get_ec2s, get_vpcs, build_data_structure
 from shared.nodes import Account, Region, Subnet, Vpc
 
 
-class TestPrepare(unittest.TestCase):
-    """Test class for prepare"""
+class Testcytoscape_generate(unittest.TestCase):
+    """Test class for cytoscape_generate"""
 
     def test_is_external_cidr(self):
         assert_true(is_external_cidr("1.1.1.1/32"))
