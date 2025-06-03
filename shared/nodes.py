@@ -23,6 +23,7 @@ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ---------------------------------------------------------------------------
 """
 import pyjq
+#import json
 from abc import ABCMeta
 from netaddr import IPNetwork, IPAddress
 from six import add_metaclass
@@ -193,6 +194,12 @@ class Node(object):
             for child in self.children:
                 leaves.extend(child.leaves)
             return leaves
+
+    def data(self):
+        if self.name:
+            return self.json | {"name": self.name}
+        else:
+            return self.json
 
     def cytoscape_data(self, parent_arn=""):
         response = {
