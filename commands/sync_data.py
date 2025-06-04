@@ -506,14 +506,23 @@ def build_data_structure(account_data, config, outputfilter):
                     cia_vpc_id = cloudia_core.post("vpc", {
                         "name": cia_vpc['name'],
                         "aws_account_id": cia_aws_account_id,
-                        "region_id": cia_region_id})
+                        "region_id": cia_region_id
+                    })
 
                     vpc_children_to_remove = set()
                     for vpc_child in vpc.children:
                         if vpc_child.has_leaves:
-                            if outputfilter.get("azs", False):
-                                cloudia_json.append(vpc_child.cytoscape_data())
+                            if vpc_child.node_type == "az":
+
+                                #cloudia_json.append(vpc_child.cytoscape_data())
+                                cia_az = vpc_child.data()
+                                cia_az_id = cloudia_core.post("az", {
+                                    "name": cia_az['name'],
+                                    "region_id": cia_region_id
+                                })
+
                             elif vpc_child.node_type != "az":
+
                                 # Add VPC children that are not AZs, such as Gateway endpoints
                                 cloudia_json.append(vpc_child.cytoscape_data())
 
@@ -522,18 +531,21 @@ def build_data_structure(account_data, config, outputfilter):
                                 if subnet.has_leaves:
 
                                     #cloudia_json.append(subnet.cytoscape_data())
-                                    print(subnet.data()['name'])
-                                    print(subnet.data()['MapPublicIpOnLaunch'])
                                     cia_subnet = subnet.data()
                                     cia_subnet_id = cloudia_core.post("subnet", {
                                         "name": cia_subnet['name'],
-                                        "vpc_id": cia_vpc_id})
-
+                                        "vpc_id": cia_vpc_id,
+                                        "az_id": cia_az_id
+                                    })
 
                                     for leaf in subnet.leaves:
-                                        cloudia_json.append(
-                                            leaf.cytoscape_data(subnet.arn)
-                                        )
+                                        leaf_data = leaf.cytoscape_data(subnet.arn)['data']
+                                        if leaf_data['type'] == "ec2":
+                                            ec2_instance_id = cloudia_core.post("ec2_instance", {
+                                                "name": leaf_data['name'],
+                                                "subnet_id": cia_subnet_id
+                                            })
+
                                 else:
                                     az_children_to_remove.add(subnet)
                             for subnet in az_children_to_remove:
