@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Next
+
+- cleanup usage
+
 ## 0.1.1
 
 - re-rebrand to cloudia-aws-reader

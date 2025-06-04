@@ -38,7 +38,6 @@
           default = pkgs.mkShell {
             inherit packages;
             shellHook = ''
-              /usr/bin/env zsh
             '';
         };
       });

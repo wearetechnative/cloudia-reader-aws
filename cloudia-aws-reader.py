@@ -30,14 +30,17 @@ import sys
 import pkgutil
 import importlib
 
-__version__ = "2.10.1"
+__version__ = "0.1.1"
 
 
 def show_help(commands):
-    print("Cloudia {}".format(__version__))
-    print("usage: {} [{}] [...]".format(sys.argv[0], "|".join(sorted(commands.keys()))))
+    print("Cloudia {}\n".format(__version__))
+    print("usage: {} [{}] [...]\n".format(sys.argv[0], "|".join(sorted(commands.keys()))))
     for command, module in sorted(commands.items()):
-        print("  {}: {}".format(command, module.__description__))
+        spaces=""
+        for _ in range((20-len(command))):
+            spaces += " "
+        print("  {}{} {}".format(command,spaces, module.__description__))
     exit(-1)
 
 

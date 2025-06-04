@@ -27,6 +27,7 @@ These commands has been tested to function correctly.
 - configure
 - cytoscape_generate
 - cytoscape_serve
+- sync_data
 
 # Commands
 

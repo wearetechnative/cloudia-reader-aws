@@ -53,7 +53,7 @@ from shared.nodes import (
 )
 from shared import cloudia_core
 
-__description__ = "Generate network connection information file"
+__description__ = "Sync collected AWS account data to cloudia-core"
 
 MUTE = False
 
