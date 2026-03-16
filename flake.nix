@@ -36,7 +36,7 @@
         in
         {
           default = pkgs.mkShell {
-            inherit packages;
+            buildInputs = packages;
             shellHook = ''
             '';
         };
