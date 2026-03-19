@@ -27,3 +27,4 @@ auditor/.env
 auditor/resources/cloudmapper
 .temp.html
 .temp.seed
+result
