@@ -60,7 +60,7 @@ git commit -m "release: v${new_version}"
 git tag -a "v${new_version}" -m "v${new_version}"
 
 echo "Pushing commit and tag..."
-git push
+git push origin HEAD:main
 git push origin "v${new_version}"
 
 # --- GitHub release ---
