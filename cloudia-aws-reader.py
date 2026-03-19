@@ -29,8 +29,13 @@ from __future__ import absolute_import, division, print_function
 import sys
 import pkgutil
 import importlib
+from pathlib import Path
 
-__version__ = "0.1.1"
+_version_file = Path(__file__).resolve().parent / "VERSION"
+if not _version_file.exists():
+    print("ERROR: VERSION file not found at {}".format(_version_file), file=sys.stderr)
+    sys.exit(1)
+__version__ = _version_file.read_text().strip()
 
 
 def show_help(commands):

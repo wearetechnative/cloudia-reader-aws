@@ -3,6 +3,7 @@
 ## Next
 
 - cleanup usage
+- make cloudia-aws-reader as single nix run target
 
 ## 0.1.1
 

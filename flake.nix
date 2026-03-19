@@ -36,7 +36,7 @@
         in
         {
           default = pkgs.mkShell {
-            buildInputs = packages;
+            buildInputs = packages ++ [ pkgs.gum pkgs.gh ];
             shellHook = ''
             '';
         };

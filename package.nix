@@ -2,7 +2,7 @@
 
 python.pkgs.buildPythonPackage rec {
   pname = "cloudia-aws-reader";
-  version = "0.1.0";
+  version = builtins.replaceStrings ["\n"] [""] (builtins.readFile ./VERSION);
   src = ./.;
 
   propagatedBuildInputs = with python.pkgs; [
