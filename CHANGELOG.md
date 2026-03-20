@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.1.4
+
 - fix nix install
 
 # 0.1.3
