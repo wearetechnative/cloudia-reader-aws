@@ -5,6 +5,11 @@ python.pkgs.buildPythonPackage rec {
   version = builtins.replaceStrings ["\n"] [""] (builtins.readFile ./VERSION);
   src = ./.;
 
+  postPatch = ''
+    substituteInPlace cloudia-aws-reader.py \
+      --replace-quiet "__VERSION_PLACEHOLDER__" "${version}"
+  '';
+
   propagatedBuildInputs = with python.pkgs; [
     boto3
     botocore

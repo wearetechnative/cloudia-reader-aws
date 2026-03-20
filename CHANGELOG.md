@@ -2,7 +2,11 @@
 
 ## Next
 
-## 0.1.3
+- fix nix install
+
+# 0.1.3
+
+- fix release
 
 ## 0.1.2
 

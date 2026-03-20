@@ -31,11 +31,16 @@ import pkgutil
 import importlib
 from pathlib import Path
 
+_BAKED_VERSION = "__VERSION_PLACEHOLDER__"
+
 _version_file = Path(__file__).resolve().parent / "VERSION"
-if not _version_file.exists():
+if _version_file.exists():
+    __version__ = _version_file.read_text().strip()
+elif _BAKED_VERSION != "__VERSION_PLACEHOLDER__":
+    __version__ = _BAKED_VERSION
+else:
     print("ERROR: VERSION file not found at {}".format(_version_file), file=sys.stderr)
     sys.exit(1)
-__version__ = _version_file.read_text().strip()
 
 
 def show_help(commands):
@@ -53,13 +58,15 @@ def main():
     """Entry point for the CLI."""
 
     # Load commands
-    # TODO: This adds half a second to the start time. Is there a smarter way
-    # to do this?
     commands = {}
-    commands_paths = ["commands", "private_commands"]
-    for commands_path in commands_paths:
-        for importer, command_name, _ in pkgutil.iter_modules([commands_path]):
-            full_package_name = "%s.%s" % (commands_path, command_name)
+    commands_packages = ["commands", "private_commands"]
+    for pkg_name in commands_packages:
+        try:
+            pkg = importlib.import_module(pkg_name)
+        except ImportError:
+            continue
+        for importer, command_name, _ in pkgutil.iter_modules(pkg.__path__):
+            full_package_name = "%s.%s" % (pkg_name, command_name)
             module = importlib.import_module(full_package_name)
             commands[command_name] = module
 
