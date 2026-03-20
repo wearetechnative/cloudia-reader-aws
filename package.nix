@@ -7,7 +7,7 @@ python.pkgs.buildPythonPackage rec {
 
   postPatch = ''
     substituteInPlace cloudia-aws-reader.py \
-      --replace-quiet "__VERSION_PLACEHOLDER__" "${version}"
+      --replace-fail "__VERSION_PLACEHOLDER__" "${version}"
   '';
 
   propagatedBuildInputs = with python.pkgs; [

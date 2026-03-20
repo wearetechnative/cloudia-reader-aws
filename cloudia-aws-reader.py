@@ -32,11 +32,12 @@ import importlib
 from pathlib import Path
 
 _BAKED_VERSION = "__VERSION_PLACEHOLDER__"
+_VERSION_NOT_SET = "__VERSION_" + "PLACEHOLDER__"
 
 _version_file = Path(__file__).resolve().parent / "VERSION"
 if _version_file.exists():
     __version__ = _version_file.read_text().strip()
-elif _BAKED_VERSION != "__VERSION_PLACEHOLDER__":
+elif _BAKED_VERSION != _VERSION_NOT_SET:
     __version__ = _BAKED_VERSION
 else:
     print("ERROR: VERSION file not found at {}".format(_version_file), file=sys.stderr)
