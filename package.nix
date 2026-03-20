@@ -32,6 +32,7 @@ python.pkgs.buildPythonPackage rec {
   postInstall = ''
     cp $out/bin/cloudia-aws-reader.py $out/bin/cloudia-aws-reader
     rm $out/bin/cloudia-aws-reader.py
+    cp $src/collect_commands.yaml $out/bin/
   '';
 
 }

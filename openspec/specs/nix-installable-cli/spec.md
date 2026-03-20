@@ -4,15 +4,19 @@
 TBD - created by archiving change nix-flake-install. Update Purpose after archive.
 ## Requirements
 ### Requirement: CLI binary available via nix shell
-The flake SHALL expose `cloudia-aws-reader` as an executable binary when a user runs `nix shell .` in the project root. The binary name MUST be exactly `cloudia-aws-reader` (no `.py` suffix).
+The flake SHALL expose `cloudia-aws-reader` as an executable binary when a user runs `nix shell .` in the project root. The binary name MUST be exactly `cloudia-aws-reader` (no `.py` suffix). The binary SHALL discover and load its command modules regardless of the current working directory.
 
 #### Scenario: Run via nix shell
 - **WHEN** a user runs `nix shell .` followed by `cloudia-aws-reader --help`
-- **THEN** the command executes successfully and prints usage information
+- **THEN** the command executes successfully and prints usage information including all available commands
 
 #### Scenario: No .py suffixed binary in PATH
 - **WHEN** a user runs `nix shell .`
 - **THEN** only `cloudia-aws-reader` (without `.py`) SHALL be available in `$out/bin/`
+
+#### Scenario: Run from arbitrary directory
+- **WHEN** a user runs `cloudia-aws-reader` from a directory other than the source tree
+- **THEN** the command SHALL still discover and list all available commands
 
 ### Requirement: Installable as flake input
 The flake SHALL be usable as an input in another flake's `inputs` block. When consumed as an input, the `packages.<system>.default` output SHALL provide the `cloudia-aws-reader` binary.
@@ -45,4 +49,11 @@ The Nix devShell SHALL include `gum` and `gh` as build inputs so release tooling
 #### Scenario: gh available in devShell
 - **WHEN** the user enters the devShell via `nix develop`
 - **THEN** `gh` SHALL be on PATH
+
+### Requirement: Build-time version substitution
+`package.nix` SHALL substitute a version placeholder in the script with the actual version string during the build, so the installed binary has the version baked in.
+
+#### Scenario: Version baked in during Nix build
+- **WHEN** the package is built with `nix build`
+- **THEN** the installed script SHALL contain the actual version string, not the placeholder
 

@@ -2,9 +2,11 @@ import os.path
 import os
 import glob
 import argparse
+from pathlib import Path
 from shutil import rmtree
 import logging
 import json
+import sys
 import time
 import boto3
 import yaml
@@ -321,7 +323,7 @@ def collect(arguments):
         "organizations",
     ]
 
-    with open("collect_commands.yaml", "r") as f:
+    with open(arguments.collect_commands_file, "r") as f:
         collect_commands = yaml.safe_load(f)
 
     for runner in collect_commands:
@@ -612,6 +614,14 @@ def run(arguments):
         type=str,
         dest="regions_filter",
         default="",
+    )
+    _default_collect_commands = str(Path(sys.argv[0]).resolve().parent / "collect_commands.yaml")
+    parser.add_argument(
+        "--collect-commands",
+        help="Path to collect_commands.yaml (default: bundled with binary)",
+        type=str,
+        dest="collect_commands_file",
+        default=_default_collect_commands,
     )
 
     args = parser.parse_args(arguments)
